@@ -39,7 +39,7 @@ export async function submitContact(
     };
   } catch (error) {
     return {
-      message: "خطا در ارسال پیام",
+      message: ` ${error} "خطا در ارسال پیام"`,
       status: "error",
     };
   }
